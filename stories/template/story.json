@@ -2,15 +2,16 @@
   "scriptVersion": 1,
   "id": "ui-test-phone-v2",
   "title": "捡手机",
-  "description": "仅用于界面测试，不含剧情",
-  "revision": 2,
+  "description": "微信聊天演示：旭",
+  "revision": 3,
   "phone": {
-    "owner": "机主",
-    "date": "2026-10-25",
-    "time": "09:41",
+    "owner": "我",
+    "date": "2026-10-31",
+    "time": "14:47",
     "battery": 94,
     "network": "5G",
-    "wallpaper": "apple-wwdc26"
+    "wallpaper": "apple-wwdc26",
+    "passcode": "021205"
   },
   "installedApps": [
     "appstore",
@@ -93,6 +94,13 @@
       "name": "测试联系人",
       "phone": "",
       "bio": "这是一条测试内容。"
+    },
+    {
+      "id": "axu",
+      "name": "旭",
+      "phone": "",
+      "avatar": "",
+      "bio": "微信昵称：nobody"
     }
   ],
   "chats": [
@@ -107,22 +115,6 @@
       "messages": [
         {
           "id": "test-message-messages",
-          "body": "这是一条测试消息。",
-          "senderId": "test-contact"
-        }
-      ]
-    },
-    {
-      "id": "test-chat-wechat",
-      "app": "wechat",
-      "title": "测试会话",
-      "participants": [
-        "owner",
-        "test-contact"
-      ],
-      "messages": [
-        {
-          "id": "test-message-wechat",
           "body": "这是一条测试消息。",
           "senderId": "test-contact"
         }
@@ -242,6 +234,76 @@
           "id": "test-reply-kakao",
           "body": "这是一条测试回复。",
           "senderId": "owner"
+        }
+      ]
+    },
+    {
+      "id": "wechat-axu-chat",
+      "app": "wechat",
+      "title": "旭",
+      "participants": [
+        "owner",
+        "axu"
+      ],
+      "messages": [
+        {
+          "id": "axu-msg-01",
+          "title": "旭",
+          "body": "11",
+          "time": "2026-10-31 14:03",
+          "senderId": "owner"
+        },
+        {
+          "id": "axu-msg-02",
+          "title": "旭",
+          "body": "？",
+          "time": "2026-10-31 14:04",
+          "senderId": "axu"
+        },
+        {
+          "id": "axu-msg-03",
+          "title": "旭",
+          "body": "等下一块出去吃饭不",
+          "time": "2026-10-31 14:08",
+          "senderId": "owner"
+        },
+        {
+          "id": "axu-msg-04",
+          "title": "旭",
+          "body": "去不了我跟别人约了",
+          "time": "2026-10-31 14:11",
+          "senderId": "axu"
+        },
+        {
+          "id": "axu-msg-05",
+          "title": "旭",
+          "body": "哦。",
+          "time": "2026-10-31 14:13",
+          "senderId": "owner"
+        },
+        {
+          "id": "axu-msg-06",
+          "title": "旭",
+          "body": "ToT",
+          "time": "2026-10-31 14:43",
+          "senderId": "owner"
+        },
+        {
+          "id": "axu-msg-07",
+          "title": "旭",
+          "body": "ToT",
+          "time": "2026-10-31 14:44",
+          "senderId": "owner",
+          "meta": {
+            "recalled": "true"
+          }
+        },
+        {
+          "id": "axu-msg-08",
+          "title": "旭",
+          "body": "？",
+          "time": "2026-10-31 14:47",
+          "senderId": "axu"
         }
       ]
     }
