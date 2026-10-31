@@ -108,10 +108,12 @@ function MessageList({
             <Avatar name={i.sender} src={i.avatar} />
           )}
           <button
-            className="skin-bubble"
+            className={`skin-bubble ${i.meta.recalled === "true" ? "wx-recalled" : ""}`}
             onClick={() => (creator ? onItem(i) : onRead(i.id))}
           >
-            {["image", "audio", "video"].includes(i.kind) ? (
+            {i.meta.recalled === "true" ? (
+              <span className="wx-recalled-text">你撤回了一条消息</span>
+            ) : ["image", "audio", "video"].includes(i.kind) ? (
               <ItemMedia item={i} />
             ) : i.kind === "transfer" ? (
               <div className="skin-transfer">
