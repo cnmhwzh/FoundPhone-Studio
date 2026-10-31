@@ -4130,3 +4130,5 @@
 .catalog-slot[hidden] {
   display: none;
 }
+
+.wx-recalled{background:transparent!important;box-shadow:none!important;padding:2px 8px!important;color:#999!important}.wx-recalled-text{display:block;min-width:140px;text-align:center;color:#999;font-size:11px;line-height:1.5}.skin-message:has(.wx-recalled){justify-content:center}
